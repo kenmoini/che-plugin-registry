@@ -6,6 +6,12 @@ args = parser.parse_args()
 
 extensions = []
 
+def find(list_of_tuples, value):
+    try:
+        return next(x for x in list_of_tuples if value in x)
+    except StopIteration:
+        return None
+
 with open('mirror.yml') as f:
     result =  yaml.safe_load(f)
 
@@ -47,9 +53,12 @@ with open('mirror.yml') as f:
                     if kVersion != 'latest' and kVersion != 'pre-release':
                         versionData = { 'id': extensionPath, 'version': kVersion }
                         extensions.append(versionData)
-            # Defaults to latest version
+            # Defaults to the specified version if it's found
             else:
-                versionData = { 'id': extensionPath, 'version': metadata.get('version') }
+                if find(metadata.get('allVersions'), version):
+                    versionData = { 'id': extensionPath, 'version': version }
+                else:
+                    versionData = { 'id': extensionPath, 'version': metadata.get('version') }
                 extensions.append(versionData)
             
 

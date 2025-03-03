@@ -1,47 +1,47 @@
 ---
 openvsx:
   - name: streetsidesoftware.code-spell-checker
-    version: all
+    version: last-10
   - name: ecmel.vscode-html-css
-    version: all
+    version: last-10
   - name: ms-kubernetes-tools.vscode-kubernetes-tools
-    version: all
+    version: last-10
   - name: golang.Go
-    version: all
+    version: last-10
   - name: redhat.vscode-xml
-    version: all
+    version: last-10
   - name: redhat.vscode-yaml
-    version: all
+    version: last-10
   - name: oderwat.indent-rainbow
-    version: all
+    version: last-10
   - name: ms-python.python
-    version: all
+    version: last-10
   - name: ms-python.pylint
-    version: all
+    version: last-10
   - name: ms-python.black-formatter
-    version: all
+    version: last-10
   - name: ms-python.debugpy
-    version: all
+    version: last-10
   - name: ms-python.isort
-    version: all
+    version: last-10
   - name: ms-toolsai.jupyter
-    version: all
+    version: last-10
   - name: ms-toolsai.jupyter-keymap
-    version: all
+    version: last-10
   - name: ms-toolsai.jupyter-renderers
-    version: all
+    version: last-10
   - name: ms-toolsai.vscode-jupyter-cell-tags
-    version: all
+    version: last-10
   - name: ms-toolsai.vscode-jupyter-slideshow
-    version: all
+    version: last-10
   - name: ms-azuretools.vscode-docker
-    version: all
+    version: last-10
   - name: DavidAnson.vscode-markdownlint
-    version: all
+    version: last-10
   - name: ms-vscode.makefile-tools
-    version: all
+    version: last-10
   - name: jeanp413.open-remote-ssh
-    version: all
+    version: last-10
   - name: donjayamanne.githistory
     version: latest
   - name: yzane.markdown-pdf
@@ -86,12 +86,6 @@ openvsx:
     version: latest
   - name: xdebug.php-debug
     version: latest
-  - name: ms-dotnettools.vscode-dotnet-runtime
-    version: latest
-  - name: muhammad-sammy.csharp
-    version: latest
-  - name: SonarSource.sonarlint-vscode
-    version: latest
   - name: vscode.git-base
     version: latest
   - name: vscode.git
@@ -101,12 +95,6 @@ openvsx:
   - name: redhat.vscode-commons
     version: latest
   - name: redhat.vscode-tekton-pipelines
-    version: latest
-  - name: atlassian.atlascode
-    version: latest
-  - name: JFrog.jfrog-vscode-extension
-    version: latest
-  - name: SonatypeCommunity.vscode-iq-plugin
     version: latest
   - name: GitLab.gitlab-workflow
     version: latest
@@ -130,15 +118,27 @@ openvsx:
     version: latest
   - name: mongodb.mongodb-vscode
     version: latest
-  - name: Zowe.vscode-extension-for-zowe
-    version: latest
-  - name: Zowe.zowe-explorer-ftp-extension
-    version: latest
-  - name: Zowe.cics-extension-for-zowe
-    version: latest
-  - name: IBM.zopeneditor
-    version: latest
-  - name: IBM.zopendebug
-    version: latest
-  - name: Zowe.secrets-for-kubernetes
-    version: latest
+  #- name: atlassian.atlascode
+  #  version: latest
+  #- name: JFrog.jfrog-vscode-extension
+  #  version: latest
+  #- name: SonatypeCommunity.vscode-iq-plugin
+  #  version: latest
+  #- name: ms-dotnettools.vscode-dotnet-runtime
+  #  version: latest
+  #- name: muhammad-sammy.csharp
+  #  version: latest
+  #- name: SonarSource.sonarlint-vscode
+  #  version: latest
+  #- name: Zowe.vscode-extension-for-zowe
+  #  version: latest
+  #- name: Zowe.zowe-explorer-ftp-extension
+  #  version: latest
+  #- name: Zowe.cics-extension-for-zowe
+  #  version: latest
+  #- name: IBM.zopeneditor
+  #  version: latest
+  #- name: IBM.zopendebug
+  #  version: latest
+  #- name: Zowe.secrets-for-kubernetes
+  #  version: latest

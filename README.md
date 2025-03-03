@@ -6,6 +6,8 @@ This repo has a YAML file, `mirror.yml` - this file houses the definition of wha
 
 That file is used by the `generate-mirror-json.py` script - this will use the OpenVSX API to gather the metadata of the extensions listed in the `mirror.yml` file and generates the mirror JSON needed to build a Plugin Registry Mirror image.
 
+The `generate.sh` script will run that Python script as well as perform all the other steps needed to build/push the Plugin Registry image.
+
 1. Modify `mirror.yml` to suit your needs - use https://open-vsx.org/ as a source
 2. Optionally run `python3 generate-mirror-json.py [-o my-file.json]` to test
 3. Modify `generate.sh` to suit your needs

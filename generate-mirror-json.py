@@ -1,4 +1,8 @@
-import yaml, requests
+import yaml, requests, argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-o', '--output', action='store', dest='output', help='Output file')
+args = parser.parse_args()
 
 extensions = []
 
@@ -13,6 +17,7 @@ with open('mirror.yml') as f:
         
         # Get the extension metadata from the OpenVSX API
         # https://open-vsx.org/api
+        print("- Getting metadata for " + extensionPath)
         extensionURL = 'https://open-vsx.org/api/' + extensionNamespace + '/' + extensionName
         metadata = requests.get(extensionURL).json()
         # Skip pre-release versions
@@ -33,4 +38,10 @@ with open('mirror.yml') as f:
                 extensions.append(versionData)
             
 
-print(extensions)
+# Write the output to a file
+if args.output:
+    with open(args.output, 'w') as f:
+        yaml.dump(extensions, f)
+else:
+    print("- Outputting to console")
+    print(yaml.dump(extensions))

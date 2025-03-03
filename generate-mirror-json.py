@@ -32,7 +32,7 @@ with open('mirror.yml') as f:
             elif version == "all":
                 for kVersion, vVersion in metadata.get('allVersions').items():
                     if kVersion != 'latest' and kVersion != 'pre-release':
-                        versionData = { 'id': extensionPath, 'version': vVersion }
+                        versionData = { 'id': extensionPath, 'version': kVersion }
                         extensions.append(versionData)
             # Defaults to latest version
             else:

@@ -16,4 +16,6 @@ python3 ${SCRIPT_DIR}/generate-mirror-json.py -o /tmp/che-plugin-registry/devspa
 
 cd /tmp/che-plugin-registry/devspaces/dependencies/che-plugin-registry/
 
+sed -i 's|$preRelease == true|$preRelease == "nottrue"|g' build/scripts/download_vsix.sh
+
 ./build.sh -t ${TAG} -o ${ORG} --offline && podman push quay.io/${ORG}/pluginregistry-rhel9:${TAG}

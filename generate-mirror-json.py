@@ -1,4 +1,4 @@
-import yaml, requests, argparse
+import yaml, requests, argparse, json, time
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-o', '--output', action='store', dest='output', help='Output file')
@@ -17,6 +17,8 @@ with open('mirror.yml') as f:
         
         # Get the extension metadata from the OpenVSX API
         # https://open-vsx.org/api
+        print("Waiting for 2 seconds between requests...")
+        time.sleep(2)
         print("- Getting metadata for " + extensionPath)
         extensionURL = 'https://open-vsx.org/api/' + extensionNamespace + '/' + extensionName
         metadata = requests.get(extensionURL).json()
@@ -41,7 +43,7 @@ with open('mirror.yml') as f:
 # Write the output to a file
 if args.output:
     with open(args.output, 'w') as f:
-        yaml.dump(extensions, f)
+        json.dump(extensions, f, indent=2)
 else:
     print("- Outputting to console")
-    print(yaml.dump(extensions))
+    print(json.dump(extensions, indent=2))

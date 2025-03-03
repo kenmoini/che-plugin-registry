@@ -7,7 +7,7 @@ openvsx:
       - 2025.1.0
   - name: GitHub.vscode-pull-request-github
     version: last-10
-    excludeVersion:
+    excludeVersions:
       # Version 0.104.1 of GitHub/vscode-pull-request-github is not compatible with VS Code editor 1.96.0
       - "0.104.1"
       # Version 0.104.0 of GitHub/vscode-pull-request-github is not compatible with VS Code editor 1.96.0

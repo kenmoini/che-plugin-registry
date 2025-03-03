@@ -2,12 +2,12 @@
 openvsx:
 # Special Pickles
   - name: ms-toolsai.jupyter
-    version: last-10
+    version: last-3
     excludeVersions:
       # Version 2025.1.0 of ms-toolsai/jupyter is not compatible with VS Code editor 1.96.0
       - 2025.1.0
   - name: GitHub.vscode-pull-request-github
-    version: last-10
+    version: last-3
     excludeVersions:
       # Version 0.104.1 of GitHub/vscode-pull-request-github is not compatible with VS Code editor 1.96.0
       - "0.104.1"
@@ -16,75 +16,75 @@ openvsx:
 
 # Built-in?
   #- name: vscode.github-authentication
-  #  version: last-10
+  #  version: last-3
 
 # Personal picks
   - name: GitHub.vscode-github-actions
-    version: last-10
+    version: last-3
   - name: streetsidesoftware.code-spell-checker
-    version: last-10
+    version: last-3
   - name: ecmel.vscode-html-css
-    version: last-10
+    version: last-3
   - name: ms-kubernetes-tools.vscode-kubernetes-tools
-    version: last-10
+    version: last-3
   - name: golang.Go
-    version: last-10
+    version: last-3
   - name: redhat.vscode-xml
-    version: last-10
+    version: last-3
   - name: redhat.vscode-yaml
-    version: last-10
+    version: last-3
   - name: oderwat.indent-rainbow
-    version: last-10
+    version: last-3
   - name: ms-python.python
-    version: last-10
+    version: last-3
   - name: ms-python.pylint
-    version: last-10
+    version: last-3
   - name: ms-python.black-formatter
-    version: last-10
+    version: last-3
   - name: ms-python.debugpy
-    version: last-10
+    version: last-3
   - name: ms-python.isort
-    version: last-10
+    version: last-3
   - name: ms-toolsai.jupyter-keymap
-    version: last-10
+    version: last-3
   - name: ms-toolsai.jupyter-renderers
-    version: last-10
+    version: last-3
   - name: ms-toolsai.vscode-jupyter-cell-tags
-    version: last-10
+    version: last-3
   - name: ms-toolsai.vscode-jupyter-slideshow
-    version: last-10
+    version: last-3
   - name: ms-azuretools.vscode-docker
-    version: last-10
+    version: last-3
   - name: DavidAnson.vscode-markdownlint
-    version: last-10
+    version: last-3
   - name: ms-vscode.makefile-tools
-    version: last-10
+    version: last-3
   - name: jeanp413.open-remote-ssh
-    version: last-10
+    version: last-3
   - name: redhat.vscode-redhat-account
-    version: last-10
+    version: last-3
   - name: redhat.vscode-openshift-connector
-    version: last-10
+    version: last-3
   - name: vscode.git-base
-    version: last-10
+    version: last-3
   - name: vscode.git
-    version: last-10
+    version: last-3
   - name: redhat.vscode-commons
-    version: last-10
+    version: last-3
   - name: redhat.vscode-tekton-pipelines
-    version: last-10
+    version: last-3
   - name: redhat.ansible
-    version: last-10
+    version: last-3
   - name: redhat.vscode-microprofile
-    version: last-10
+    version: last-3
   - name: vscode.html-language-features
-    version: last-10
+    version: last-3
   - name: xdebug.php-debug
-    version: last-10
+    version: last-3
   - name: vscode.npm
-    version: last-10
+    version: last-3
   - name: esbenp.prettier-vscode
-    version: last-10
+    version: last-3
 
 # These are just kinda "sure" entries
   - name: donjayamanne.githistory

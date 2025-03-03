@@ -36,15 +36,16 @@ with open('mirror.yml') as f:
                 versionData = { 'id': extensionPath, 'version': metadata.get('version') }
                 extensions.append(versionData)
             # Get last 10 versions
-            elif version == "last-10":
-                lastTen = []
+            elif "last-" in version:
+                lastEntries = []
+                lastNum = int(version.split('-')[1])
                 for kVersion, vVersion in metadata.get('allVersions').items():
                     if (kVersion != 'latest') and (kVersion != 'pre-release'):
                         if excludeVersions:
                             if kVersion in excludeVersions:
                                 continue
-                        if len(lastTen) < 10:
-                            lastTen.append(kVersion)
+                        if len(lastEntries) < lastNum:
+                            lastEntries.append(kVersion)
                             versionData = { 'id': extensionPath, 'version': kVersion }
                             extensions.append(versionData)
             # Get all versions

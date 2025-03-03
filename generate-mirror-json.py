@@ -14,6 +14,7 @@ with open('mirror.yml') as f:
         extensionNamespace = extensionPath.split('.')[0]
         extensionName = extensionPath.split('.')[1]
         version = extension.get('version')
+        excludeVersions = extension.get('excludeVersions')
         
         # Get the extension metadata from the OpenVSX API
         # https://open-vsx.org/api
@@ -32,7 +33,10 @@ with open('mirror.yml') as f:
             elif version == "last-10":
                 lastTen = []
                 for kVersion, vVersion in metadata.get('allVersions').items():
-                    if kVersion != 'latest' and kVersion != 'pre-release':
+                    if (kVersion != 'latest') and (kVersion != 'pre-release'):
+                        if excludeVersions:
+                            if kVersion in excludeVersions:
+                                continue
                         if len(lastTen) < 10:
                             lastTen.append(kVersion)
                             versionData = { 'id': extensionPath, 'version': kVersion }

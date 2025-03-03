@@ -26,6 +26,9 @@ openvsx:
     version: last-10
   - name: ms-toolsai.jupyter
     version: last-10
+    excludeVersions:
+      # Version 2025.1.0 of ms-toolsai/jupyter is not compatible with VS Code editor 1.96.0
+      - 2025.1.0
   - name: ms-toolsai.jupyter-keymap
     version: last-10
   - name: ms-toolsai.jupyter-renderers
@@ -118,6 +121,8 @@ openvsx:
     version: latest
   - name: mongodb.mongodb-vscode
     version: latest
+
+# Disabled because they're lame
   #- name: atlassian.atlascode
   #  version: latest
   #- name: JFrog.jfrog-vscode-extension

@@ -1,5 +1,6 @@
 ---
 openvsx:
+# Special Pickles
   - name: ms-toolsai.jupyter
     version: last-10
     excludeVersions:
@@ -12,6 +13,8 @@ openvsx:
       - "0.104.1"
       # Version 0.104.0 of GitHub/vscode-pull-request-github is not compatible with VS Code editor 1.96.0
       - "0.104.0"
+
+# Personal picks
   - name: streetsidesoftware.code-spell-checker
     version: last-10
   - name: ecmel.vscode-html-css
@@ -52,6 +55,34 @@ openvsx:
     version: last-10
   - name: jeanp413.open-remote-ssh
     version: last-10
+  - name: vscode.github-authentication
+    version: latest
+  - name: redhat.vscode-redhat-account
+    version: latest
+  - name: redhat.vscode-openshift-connector
+    version: latest
+  - name: vscode.git-base
+    version: latest
+  - name: vscode.git
+    version: latest
+  - name: redhat.vscode-commons
+    version: latest
+  - name: redhat.vscode-tekton-pipelines
+    version: latest
+  - name: redhat.ansible
+    version: latest
+  - name: redhat.vscode-microprofile
+    version: latest
+  - name: vscode.html-language-features
+    version: latest
+  - name: xdebug.php-debug
+    version: latest
+  - name: vscode.npm
+    version: latest
+  - name: esbenp.prettier-vscode
+    version: latest
+
+# These are just kinda "sure" entries
   - name: donjayamanne.githistory
     version: latest
   - name: yzane.markdown-pdf
@@ -63,8 +94,6 @@ openvsx:
   - name: adamhartford.vscode-base64
     version: latest
   - name: usernamehw.indent-one-space
-    version: latest
-  - name: vscode.github-authentication
     version: latest
   - name: vscode.typescript-language-features
     version: latest
@@ -80,39 +109,15 @@ openvsx:
     version: latest
   - name: vscjava.vscode-java-test
     version: latest
-  - name: redhat.vscode-microprofile
-    version: latest
-  - name: vscode.html-language-features
-    version: latest
   - name: redhat.vscode-quarkus
     version: latest
   - name: redhat.fabric8-analytics
     version: latest
-  - name: redhat.vscode-redhat-account
-    version: latest
-  - name: redhat.vscode-openshift-connector
-    version: latest
-  - name: xdebug.php-debug
-    version: latest
-  - name: vscode.git-base
-    version: latest
-  - name: vscode.git
-    version: latest
   - name: dbaeumer.vscode-eslint
-    version: latest
-  - name: redhat.vscode-commons
-    version: latest
-  - name: redhat.vscode-tekton-pipelines
     version: latest
   - name: GitLab.gitlab-workflow
     version: latest
   - name: timonwong.shellcheck
-    version: latest
-  - name: redhat.ansible
-    version: latest
-  - name: vscode.npm
-    version: latest
-  - name: esbenp.prettier-vscode
     version: latest
   - name: eamodio.gitlens
     version: latest

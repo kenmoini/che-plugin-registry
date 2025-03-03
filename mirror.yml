@@ -14,7 +14,13 @@ openvsx:
       # Version 0.104.0 of GitHub/vscode-pull-request-github is not compatible with VS Code editor 1.96.0
       - "0.104.0"
 
+# Built-in?
+  #- name: vscode.github-authentication
+  #  version: last-10
+
 # Personal picks
+  - name: GitHub.vscode-github-actions
+    version: last-10
   - name: streetsidesoftware.code-spell-checker
     version: last-10
   - name: ecmel.vscode-html-css
@@ -55,32 +61,30 @@ openvsx:
     version: last-10
   - name: jeanp413.open-remote-ssh
     version: last-10
-  - name: vscode.github-authentication
-    version: latest
   - name: redhat.vscode-redhat-account
-    version: latest
+    version: last-10
   - name: redhat.vscode-openshift-connector
-    version: latest
+    version: last-10
   - name: vscode.git-base
-    version: latest
+    version: last-10
   - name: vscode.git
-    version: latest
+    version: last-10
   - name: redhat.vscode-commons
-    version: latest
+    version: last-10
   - name: redhat.vscode-tekton-pipelines
-    version: latest
+    version: last-10
   - name: redhat.ansible
-    version: latest
+    version: last-10
   - name: redhat.vscode-microprofile
-    version: latest
+    version: last-10
   - name: vscode.html-language-features
-    version: latest
+    version: last-10
   - name: xdebug.php-debug
-    version: latest
+    version: last-10
   - name: vscode.npm
-    version: latest
+    version: last-10
   - name: esbenp.prettier-vscode
-    version: latest
+    version: last-10
 
 # These are just kinda "sure" entries
   - name: donjayamanne.githistory

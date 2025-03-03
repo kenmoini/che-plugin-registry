@@ -85,6 +85,8 @@ openvsx:
     version: last-3
   - name: esbenp.prettier-vscode
     version: last-3
+  - name: redhat.java
+    version: last-3
 
 # These are just kinda "sure" entries
   - name: donjayamanne.githistory
@@ -106,8 +108,6 @@ openvsx:
   - name: eclipse-cdt.cdt-gdb-vscode
     version: latest
   - name: bmewburn.vscode-intelephense-client
-    version: latest
-  - name: redhat.java
     version: latest
   - name: vscjava.vscode-java-debug
     version: latest

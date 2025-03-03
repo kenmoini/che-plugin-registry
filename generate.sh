@@ -22,6 +22,7 @@ sed -i 's|$preRelease == true|$preRelease == "nottrue"|g' build/scripts/download
 # Stop buggy extensions with poor deps from failing 
 # - vscode.github-authentication
 # - redhat.vscode-yaml
+# - redhat.java (????)
 sed -i 's|set -e||g' build/scripts/import_vsix.sh
 sed -i 's|set -o pipefail||g' build/scripts/import_vsix.sh
 
